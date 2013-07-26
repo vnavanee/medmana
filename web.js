@@ -4,7 +4,7 @@ var fs = require('fs');
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-var outfile = "index.html";
+var outfile = "medindex.html";
 var readfile =fs.readFileSync(outfile);
 var btos = readfile.toString();
 
